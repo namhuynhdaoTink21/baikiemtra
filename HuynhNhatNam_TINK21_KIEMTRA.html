@@ -1,0 +1,161 @@
+<html>
+<head>
+
+</head>
+<style>
+	.namgiua{
+	width: 1241;
+	margin-left:auto;
+	margin-right:auto;
+	}
+	
+	.menu {
+	background-color: #444444;
+}
+
+.menu ul {
+	list-style: none;
+	padding: 0 15px;
+}
+
+.menu ul li {
+	position: relative;
+}
+
+.menu ul li a {
+	color: #EDEDED;
+	text-decoration: none;
+}
+
+.menu > ul > li {
+	display: inline-block;
+}
+
+.menu > ul > li > a {
+	display: block;
+	line-height: 40px;
+	padding: 0 15px;
+}
+
+.menu ul ul {
+	width: 150px;
+	position: absolute;
+	visibility: hidden;
+}
+
+.menu ul ul li {
+	line-height: 40px;
+	background: #777777;
+	padding: 0 15px;
+	left: -15px;
+}
+
+.menu ul ul li:hover {
+	background: #121212;
+}
+
+.menu ul li:hover > ul {
+	visibility: visible;
+	top: 100%;
+}
+
+.menu ul ul ul {
+	top: 0 !important;
+	left: 100%;
+}
+	
+.slideshow{
+	width: 1241px;
+	height: 351px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+	
+.duongvien{
+	width: 3723px;
+	-webkit-animation: slide 12s ease infinite;
+
+}
+	
+.slide{
+	float: left;
+	width: 1241px;
+	height: 351px;
+	display: flex;
+}
+
+@-webkit-keyframes slide {
+	33% {margin-left: 0px;}
+	66% {margin-left: -1241px;}
+	99% {margin-left: -2482px;}
+	
+}
+	
+</style>
+</head>
+<body>
+	<table border="1" class="namgiua" width="1241">
+	<tr>
+		<td colspan="2"><img src="banner.jpg"></td>
+	</tr>
+
+	<tr>
+		<td colspan="2" bgcolor="#444444" align="center">
+		<div class="menu">
+			<ul>
+				<li><a href="#">Menu gồm:</a></li>
+				<li><a href="#">Trang chủ</a></li>
+				<li><a href="#">Laptop</a></li>
+				<li><a href="#">Phụ kiện</a></li>
+				<li><a href="#">Điện thoại</a>
+				
+					<ul>
+						<li><a href="#">Apple</a></li>
+						<li><a href="#">SamSung</a>
+						
+						<ul>
+						<li><a href="#">S21 5G</a></li>
+						<li><a href="#">Z Flip 3</a></li>
+						<li><a href="#">Galaxy A23</a></li>
+						</ul>
+						</li>
+						<li><a href="#">Vivo</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		</td>
+	</tr>
+	
+	<tr align="center" >
+		<td colspan="3" bgcolor="lightgreen"><div class="slideshow">
+	<div class="duongvien">
+		<div class="slide"><img src="1.png"></div>
+		<div class="slide"><img src="2.png"></div>
+		<div class="slide"><img src="3.png"></div>
+	</div>
+	</tr>
+	<tr>
+	<td rowspan="2"><FORM name="dangky" method=POST>
+		<H3>ĐĂNG KÝ MUA IPHONE 14</h3>
+		Họ tên <input type="text" name="hoten" placeholder="Điền họ và tên" onchange="return kiemtrataikhoan();" size="16"><BR>
+		Số CCCD <input type="text" name="cccd" placeholder="Điền CCCD" onchange="return kiemtra_mk1();" size="12" ><BR>
+		Loại <input type="radio" name="loai" value="256GB" onclick="chonloai();" >256GB
+			 <input type="radio" name="loai" value="512GB" onclick="chonloai();" >512GB<BR><BR>
+		Lựa chọn: <input type="checkbox" name="gph" value="giaohang"> Giao hàng
+				  <input type="checkbox" name="gph" value="phukien"> Phụ kiện
+				  <input type="checkbox" name="gph" value="hoadon"> Hóa đơn<br><br>
+				  <input type="button" value="Đặt hàng" >
+
+	</FORM>
+	</td>
+	<td>
+	<img src="iphone1.jpg">
+	</td></tr>
+	<tr>
+	<td> <img src="iphone2.jpg"> </td>
+	</tr>
+	</table>
+</body>
+
+</html>
